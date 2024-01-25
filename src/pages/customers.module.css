@@ -1,0 +1,84 @@
+.max_container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  font-size: 5rem;
+  line-height: 4rem;
+  font-family: Palanquin, sans-serif;
+}
+.span {
+  color: var(--red);
+  margin: 0 5px;
+}
+.p {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 21.94px;
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+  color: var(--open-white);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 0;
+  gap: 4rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 80%;
+}
+.customers {
+  width: 150px;
+  height: 150px;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.info {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  color: rgb(109 109 109);
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  color: rgb(109 109 109);
+  font-size: 2rem;
+}
+.div {
+  justify-content: center;
+  padding: 4rem 0;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  gap: 1.2rem;
+}
+.name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  font-family: Palanquin, sans-serif;
+}
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 2.6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.superstar {
+  width: 20px;
+}

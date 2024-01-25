@@ -1,0 +1,103 @@
+.btn {
+  margin-top: 4rem;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: var(--white);
+  background-color: var(--red);
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+}
+.btn:hover {
+  background-color: red;
+}
+.btn_img {
+  width: 20px;
+  height: 20px;
+}
+.buttons:hover {
+  background-color: rgb(166, 166, 166);
+  color: #f3f3f3;
+}
+
+.buttons {
+  margin-top: 4rem;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: var(--white);
+  background-color: white;
+  border: 1px solid rgb(109, 109, 109);
+  color: rgb(109 109 109);
+  transition: 0.5s;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+}
+.buttons img {
+  background-color: red;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.img {
+  width: 600px;
+  height: 600px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+}
+.h2 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+}
+.special {
+  font-weight: 700;
+  font-family: Palanquin, sans-serif;
+
+  color: var(--red);
+}
+.info {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 1.75rem;
+  color: var(--open-white);
+}
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    font-size: 1.2rem;
+  }
+}
