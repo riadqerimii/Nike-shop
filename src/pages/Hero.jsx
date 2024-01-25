@@ -22,10 +22,12 @@ function Hero() {
           Discover stylish Nike arrivals, quality <br />
           comfort, and innovation for your active life.
         </p>
-        <button className={styles.shop}>
-          <Link to="/product">Shop Now</Link>
-          <img src={arrowRight} alt="arrow" />
-        </button>
+        <Link to="/product">
+          <button className={styles.shop}>
+            Shop Now
+            <img src={arrowRight} alt="arrow" />
+          </button>
+        </Link>
         <div className={styles.value}>
           {statistics.map((item) => (
             <div key={item.value}>
