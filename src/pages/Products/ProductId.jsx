@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 function ProductId() {
   const { id } = useParams();
 
-  const selectedProduct = products.find((item) => String(item.id) === id);
+  const selectedProduct = products.find((item) => item.id === +id);
 
   if (!selectedProduct) {
     return <div>Product not found</div>;
@@ -20,11 +20,12 @@ function ProductId() {
 
   return (
     <div className={styles.padding}>
-      <div className={styles.product} key={selectedProduct.id}>
+      <div className={styles.product}>
         <img
           className={styles.img}
           src={selectedProduct.imgURL}
           alt={selectedProduct.name}
+          key={selectedProduct.id}
         />
         <div className={styles.text}>
           <h1>{selectedProduct.name}</h1>
@@ -37,7 +38,7 @@ function ProductId() {
                   backgroundImage: `url(${bg2})`,
                   backgroundSize: "cover",
                 }}
-                key={item.id}
+                key={item.thumbnail}
                 src={item.thumbnail}
               />
             ))}
